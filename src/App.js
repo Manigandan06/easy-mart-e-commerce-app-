@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+
+import Home from "./components/Home";
+import Cart from "./components/Cart";
+import Details from "./components/Details";
+import { TiShoppingCart } from "react-icons/ti";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        <h1>
+          <Link to="/" className="title">
+            <bold>EASY MART</bold>
+          </Link>
+        </h1>
+        <input
+          type="text"
+          name="search"
+          id="search-item"
+          placeholder="search..."
+        />
+        <Link to="/cart" className="nav">
+          <TiShoppingCart />
+          Cart
+        </Link>
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/:id" element={<Details />} />
+      </Routes>
     </div>
   );
 }

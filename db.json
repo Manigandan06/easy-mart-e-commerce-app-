@@ -1,0 +1,194 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "img": "https://5.imimg.com/data5/SELLER/Default/2021/8/YN/SE/FV/72826034/red-apple-500x500.jpg",
+      "name": "Apples",
+      "type": "Fruit",
+      "color": "Red, green, yellow",
+      "nutrients": ["Fiber", "Vitamin C"],
+      "calories": 95
+    },
+    {
+      "id": 2,
+      "img": "https://img.freepik.com/free-vector/vector-ripe-yellow-banana-bunch-isolated-white-background_1284-45456.jpg?w=2000",
+      "name": "Bananas",
+      "type": "Fruit",
+      "color": "Yellow",
+      "nutrients": ["Vitamin B6", "Vitamin C", "Potassium"],
+      "calories": 105
+    },
+    {
+      "id": 3,
+      "img": "https://stylesatlife.com/wp-content/uploads/2018/04/benefits-of-orange.jpg.webp",
+      "name": "Oranges",
+      "type": "Fruit",
+      "color": "Orange",
+      "nutrients": ["Vitamin C", "Fiber"],
+      "calories": 62
+    },
+    {
+      "id": 4,
+      "img": "https://www.bigbasket.com/media/uploads/p/xxl/30009286_7-fresho-blueberry.jpg",
+      "name": "Blueberries",
+      "type": "Fruit",
+      "color": "Blue",
+      "nutrients": ["Fiber", "Vitamin C", "Antioxidants"],
+      "calories": 84
+    },
+    {
+      "id": 5,
+      "img": "https://thumbs.dreamstime.com/b/fresh-strawberry-40742985.jpg",
+      "name": "Strawberries",
+      "type": "Fruit",
+      "color": "Red",
+      "nutrients": ["Vitamin C", "Fiber"],
+      "calories": 49
+    },
+    {
+      "id": 6,
+      "img": "https://www.jiomart.com/images/product/original/590000070/pineapple-queen-1-pc-approx-700-g-1200-g-product-images-o590000070-p590000070-0-202203170357.jpg",
+      "name": "Pineapple",
+      "type": "Fruit",
+      "color": "Yellow",
+      "nutrients": ["Vitamin C", "Manganese"],
+      "calories": 82
+    },
+    {
+      "id": 7,
+      "img": "https://cpimg.tistatic.com/07617644/b/4/Fresh-Green-Grapes.jpg",
+      "name": "Grapes",
+      "type": "Fruit",
+      "color": "Purple, green",
+      "nutrients": ["Vitamin K", "Vitamin C"],
+      "calories": 69
+    },
+    {
+      "id": 8,
+      "img": "https://img.freepik.com/premium-photo/ripe-yellow-mango-with-cut-half-green-leaf-isolated-white-surface_252965-894.jpg",
+      "name": "Mango",
+      "type": "Fruit",
+      "color": "Orange",
+      "nutrients": ["Vitamin C", "Vitamin A"],
+      "calories": 99
+    },
+    {
+      "id": 9,
+      "img": "https://kumaribasket.com/wp-content/uploads/2020/08/avocoda11.jpg",
+      "name": "Avocado",
+      "type": "Fruit",
+      "color": "Green",
+      "nutrients": ["Fiber", "Potassium", "Healthy Fats"],
+      "calories": 234
+    },
+    {
+      "id": 10,
+      "img": "https://thumbs.dreamstime.com/b/tomatoes-half-tomato-isolated-white-136961939.jpg",
+      "name": "Tomatoes",
+      "type": "Vegetable",
+      "color": "Red",
+      "nutrients": ["Vitamin C", "Vitamin K", "Fiber"],
+      "calories": 18
+    },
+
+    {
+      "id": 11,
+      "img": "https://www.bigbasket.com/media/uploads/p/l/40138448_3-fresho-baby-spinach.jpg",
+      "name": "Spinach",
+      "type": "Vegetable",
+      "color": "Green",
+      "nutrients": ["Vitamin K", "Vitamin A", "Folate"],
+      "calories": 23
+    },
+    {
+      "id": 12,
+      "img": "https://domf5oio6qrcr.cloudfront.net/medialibrary/5390/h1218g16207258089583.jpg",
+      "name": "Broccoli",
+      "type": "Vegetable",
+      "color": "Green",
+      "nutrients": ["Vitamin C", "Fiber", "Vitamin K"],
+      "calories": 55
+    },
+    {
+      "id": 13,
+      "img": "https://media.istockphoto.com/id/619252960/photo/carrot.jpg?s=612x612&w=0&k=20&c=C-PlZ2oHW2SDCkaZXn8rg1UFdeF5ismwiy3v7uQRVKE=",
+      "name": "Carrots",
+      "type": "Vegetable",
+      "color": "Orange",
+      "nutrients": ["Vitamin A", "Fiber"],
+      "calories": 41
+    },
+    {
+      "id": 14,
+      "img": "https://www.chilipeppermadness.com/wp-content/uploads/2019/08/Bell-Peppers.jpg",
+      "name": "Bell Peppers",
+      "type": "Vegetable",
+      "color": "Red, green, yellow",
+      "nutrients": ["Vitamin C", "Fiber"],
+      "calories": 25
+    },
+    {
+      "id": 15,
+      "img": "https://cdn.shopify.com/s/files/1/0294/7527/4827/products/KaledesktopexcellentsnapKale_ficha-original3_800x.jpg?v=1595522450",
+      "name": "Kale",
+      "type": "Vegetable",
+      "color": "Green",
+      "nutrients": ["Vitamin K", "Vitamin A", "Fiber"],
+      "calories": 49
+    },
+    {
+      "id": 16,
+      "img": "https://www.southernliving.com/thmb/-MZmBcLEI3OyZtDtRlbqP12X_s8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/How_To_Store_Cucumbers_007-2000-0435ba84c27c426bbc6a6941f9a7ff85.jpg",
+      "name": "Cucumbers",
+      "type": "Vegetable",
+      "color": "Green",
+      "nutrients": ["Vitamin K", "Vitamin C", "Fiber"],
+      "calories": 16
+    },
+    {
+      "id": 17,
+      "img": "https://chefsmandala.com/wp-content/uploads/2018/03/Squash-Zucchini.jpg",
+      "name": "Zucchini",
+      "type": "Vegetable",
+      "color": "Green",
+      "nutrients": ["Vitamin C", "Fiber", "Potassium"],
+      "calories": 17
+    },
+    {
+      "id": 18,
+      "img": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Green_Beans_Nutrition_Facts_and_Health_Benefits-IMAGE_1.jpg?w=1155&h=1528",
+      "name": "Green Beans",
+      "type": "Vegetable",
+      "color": "Green",
+      "nutrients": ["Fiber", "Vitamin C", "Vitamin K"],
+      "calories": 31
+    },
+    {
+      "id": 19,
+      "img": "https://c.ndtvimg.com/2018-10/rn4qsd9_sweet-potatoes-_625x300_10_October_18.jpg",
+      "name": "Sweet Potatoes",
+      "type": "Vegetable",
+      "color": "Orange",
+      "nutrients": ["Vitamin A", "Fiber", "Potassium"],
+      "calories": 103
+    },
+    {
+      "id": 20,
+      "img": "https://media.istockphoto.com/id/624925456/photo/green-cabbage-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=_iABqhfVBvIv7dfpi270vWFZH0GNbzCS3L6ifvv7XYI=",
+      "name": "Cabbage",
+      "type": "Vegetable",
+      "color": "Green",
+      "nutrients": ["Vitamin C", "Fiber", "Vitamin K"],
+      "calories": 22
+    },
+    {
+      "id": 21,
+      "img": "https://cdn.shopify.com/s/files/1/0088/9896/9685/products/image.jpg?v=1658296169",
+      "name": "Asparagus",
+      "type": "Vegetable",
+      "color": "Green",
+      "nutrients": ["Vitamin K", "Vitamin C", "Folate"],
+      "calories": 27
+    }
+  ]
+}

@@ -11,7 +11,7 @@ export default function Home() {
   const dispatch = useDispatch();
   return (
     <div>
-      <div className="intro">
+      {/* <div className="intro">
         <h3>
           Welcome to our online grocery shop, where convenience meets quality!
           Browse through our extensive selection of fresh produce, pantry
@@ -21,7 +21,7 @@ export default function Home() {
           payment options. Start shopping today and let us bring the groceries
           to you!
         </h3>
-      </div>
+      </div> */}
 
       {data && (
         <div className="items">

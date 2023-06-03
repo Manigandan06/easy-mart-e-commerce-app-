@@ -33,8 +33,9 @@ h1 {
   box-sizing: border-box;
   padding: 3px;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 20px;
   align-items: center;
+  margin-left: 30%;
 }
 .cart-in {
   z-index: 1;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -7,22 +7,28 @@ import { addToCart } from "../features/cartSlice";
 import { MoonLoader } from "react-spinners";
 
 export default function Home() {
-  const { data, isLoading, error } = useGetFoodsQuery();
+  const { data: dataItem, isLoading, isError } = useGetFoodsQuery();
+  const [textInput, setTextInput] = useState("");
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    if (dataItem) {
+      let filteredData = dataItem.filter((item) =>
+        item.name.toLowerCase().includes(textInput.toLowerCase())
+      );
+      setData(filteredData);
+    }
+  }, [textInput, dataItem]);
 
   const dispatch = useDispatch();
   return (
     <div>
-      {/* <div className="intro">
-        <h3>
-          Welcome to our online grocery shop, where convenience meets quality!
-          Browse through our extensive selection of fresh produce, pantry
-          essentials, and household items. With just a few clicks, you can have
-          your groceries delivered right to your doorstep. Enjoy a hassle-free
-          shopping experience with our user-friendly interface and secure
-          payment options. Start shopping today and let us bring the groceries
-          to you!
-        </h3>
-      </div> */}
+      <input
+        type="text"
+        id="search-item"
+        value={textInput}
+        onChange={(e) => setTextInput(e.target.value)}
+        placeholder="Search..."
+      />
       {isLoading && (
         <MoonLoader
           color="rgba(29, 237, 11, 1)"
@@ -53,7 +59,7 @@ export default function Home() {
           ))}
         </div>
       )}
-      {error && <h4>Something went Wrong!</h4>}
+      {isError && <h4>Something went Wrong!</h4>}
     </div>
   );
 }

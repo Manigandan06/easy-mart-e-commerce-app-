@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useGetFoodsQuery } from "../features/APISlice";
 import { addToCart } from "../features/cartSlice";
+import { MoonLoader } from "react-spinners";
 
 export default function Home() {
-  const { data } = useGetFoodsQuery();
+  const { data, isLoading, error } = useGetFoodsQuery();
 
   const dispatch = useDispatch();
   return (
@@ -22,7 +23,15 @@ export default function Home() {
           to you!
         </h3>
       </div> */}
-
+      {isLoading && (
+        <MoonLoader
+          color="rgba(29, 237, 11, 1)"
+          cssOverride={{}}
+          size={80}
+          speedMultiplier={1}
+          className="loader"
+        />
+      )}
       {data && (
         <div className="items">
           {data.map((item) => (
@@ -33,13 +42,18 @@ export default function Home() {
               <Link to={`/${item.id}`}>
                 <button>Show More</button>
               </Link>
-              <button onClick={() => dispatch(addToCart({ name: item.name }))}>
+              <button
+                onClick={() =>
+                  dispatch(addToCart({ name: item.name, id: item.id }))
+                }
+              >
                 Add To Cart
               </button>
             </div>
           ))}
         </div>
       )}
+      {error && <h4>Something went Wrong!</h4>}
     </div>
   );
 }

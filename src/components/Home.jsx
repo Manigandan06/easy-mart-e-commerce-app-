@@ -5,15 +5,16 @@ import { useDispatch } from "react-redux";
 import { useGetFoodsQuery } from "../features/APISlice";
 import { addToCart } from "../features/cartSlice";
 import { MoonLoader } from "react-spinners";
+import Header from "./Header";
 
-export default function Home() {
+export default function Home(props) {
   const { data: dataItem, isLoading, isError } = useGetFoodsQuery();
   const [textInput, setTextInput] = useState("");
   const [data, setData] = useState([]);
   useEffect(() => {
     if (dataItem) {
       let filteredData = dataItem.filter((item) =>
-        item.name.toLowerCase().includes(textInput.toLowerCase())
+        item.name.toLowerCase().includes(textInput)
       );
       setData(filteredData);
     }
@@ -22,13 +23,7 @@ export default function Home() {
   const dispatch = useDispatch();
   return (
     <div>
-      <input
-        type="text"
-        id="search-item"
-        value={textInput}
-        onChange={(e) => setTextInput(e.target.value)}
-        placeholder="Search..."
-      />
+      <Header textInputValue={textInput} setTextValue={setTextInput} />
       {isLoading && (
         <MoonLoader
           color="rgba(29, 237, 11, 1)"

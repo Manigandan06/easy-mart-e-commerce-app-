@@ -35,9 +35,8 @@ h1 {
   box-sizing: border-box;
   padding: 3px;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 10px;
   align-items: center;
-  margin-left: 30%;
 }
 .cart-in {
   background-color: rgb(13, 235, 13);

@@ -3,7 +3,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
   const cart = useSelector((state) => state.cart.value);
 
   return (
@@ -14,7 +14,13 @@ export default function Header() {
             <bold>EASY MART</bold>
           </Link>
         </h1>
-
+        <input
+          type="text"
+          id="search-item"
+          value={props.textInputValue}
+          onChange={(e) => props.setTextValue(e.target.value)}
+          placeholder="Search..."
+        />
         {/* {isLoading ? (
           <div>Loading...</div>
         ) : isError ? (
